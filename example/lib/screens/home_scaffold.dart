@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../gen/assets.gen.dart';
 
-import 'package:package_template/package_template.dart';
+import 'package:ui_extensions_flutter/ui_extensions_flutter.dart';
 
 class HomeScaffold extends StatelessWidget {
   const HomeScaffold({super.key});
@@ -18,10 +18,6 @@ class HomeScaffold extends StatelessWidget {
   }
 
   Widget homeWidget(BuildContext context) {
-    //TODO: Replace with your own code
-    // ignore: non_constant_identifier_names
-    final PackageTemplate package_template = PackageTemplate();
-    debugPrint('$package_template');
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -29,11 +25,18 @@ class HomeScaffold extends StatelessWidget {
           SizedBox(
             width: 200,
             height: 200,
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Assets.images.ltmm1024x1024.image(),
-            ),
-          ),
+            child: Assets.images.ltmm1024x1024.image(),
+          ).paddingAll(15.0).borderAll(
+                Colors.red,
+                borderWidth: 2.0,
+              ),
+          const SizedBox(height: 20),
+          const Text('Welcome to the UI Extensions Flutter example app!')
+              .paddingAll(3)
+              .background(Colors.blue[100]!)
+              .borderAll(Colors.red),
+          const SizedBox(height: 20),
+          const Text('Faded Text').opacity(0.5),
         ],
       ),
     );

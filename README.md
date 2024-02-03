@@ -1,8 +1,6 @@
-# SETUP
+# DESCRIPTION
 
-- Find/Replace `package_template` to name of the name of the package (ex: `flutter_rocks`)
-- Addess the *TODO:* in the **/example** folder by adding code from the package
-- If needed/wanted follow the instructions in the **/example/README.md** to have the example app more reflective of your package and show off features of widget packages.
+A collection of widget extensions and typedefs often(always) used with flutter widgets.
 
 <!--
 The comments below are from the Flutter/Dart package generation. Feel free to use or ignore
