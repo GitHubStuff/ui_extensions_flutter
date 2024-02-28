@@ -1,5 +1,3 @@
-import 'dart:ffi' hide Size;
-
 import 'package:flutter/material.dart';
 
 extension BuildContextExtension<T> on BuildContext {
@@ -11,9 +9,7 @@ extension BuildContextExtension<T> on BuildContext {
 
   bool get isKeyBoardOpen => mediaQuery.viewInsets.bottom > 0;
 
-  void hideKeyboard() => !FocusScope.of(this).hasPrimaryFocus
-      ? FocusScope.of(this).unfocus()
-      : Void;
+  void hideKeyboard() => FocusScope.of(this).requestFocus(FocusNode());
 
   Future<T?> showBottomSheet(
     Widget child, {

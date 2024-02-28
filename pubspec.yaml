@@ -1,12 +1,12 @@
 name: ui_extensions_flutter
 description: "A new Flutter package project."
-version: 0.0.1
+version: 0.0.2+0
 home_page: http://www.icodeforyou.com
 publish_to: none # Remove this line if you wish to publish to pub.dev
 
 environment:
-  sdk: ">=3.2.5 <4.0.0" # % flutter --version => values of "Dart"
-  flutter: ">=3.16.8"
+  sdk: ">=3.3.0 <4.0.0" # % flutter --version => values of "Dart"
+  flutter: ">=3.19.0"
 
 dependencies:
   flutter:

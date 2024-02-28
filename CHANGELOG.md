@@ -2,4 +2,8 @@
 
 ## 0.0.1
 
-* TODO: Describe initial release.
+* initial release.
+
+## 0.0.2
+
+* 28-FEB-2024: Update to hide keyboard

@@ -7,7 +7,7 @@ version: 0.0.5+1
 
 environment:
   sdk: ">=3.2.3 <4.0.0" # % flutter --version => values of "Dart"
-  flutter: ">=3.16.8"
+  flutter: ">=3.19.0"
 
 dependencies:
   flutter:
