@@ -16,6 +16,10 @@ dependencies:
     git: https://github.com/GitHubStuff/ui_extensions_flutter.git
 ```
 
+```dart
+import 'package:ui_extensions_flutter/ui_extensions_flutter.dart';
+```
+
 ## BuildContext
 
 - MediaQueryData mediaQuery
