@@ -1,0 +1,18 @@
+name: ui_extensions_flutter
+description: "Flutter package of Widget, and Platform info, & Buildextensions."
+version: 0.0.6+7
+home_page: http://www.icodeforyou.com
+publish_to: none # Remove this line if you wish to publish to pub.dev
+
+environment:
+  sdk: ">=3.3.0 <4.0.0" # % flutter --version => values of "Dart"
+  flutter: ">=3.19.6"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
