@@ -28,27 +28,46 @@ class HomeWidget extends StatelessWidget {
                     width: 2.0,
                   ),
             ]),
-            const Gap(8.0),
+            const Gap(4.0),
             ElevatedButton(
-                onPressed: () {
-                  showCustomSnackBar(
-                    context,
-                    context.isKeyBoardOpen
-                        ? 'Keyboard Open'
-                        : 'Keyboard Closed',
-                  );
-                },
-                child: const Text(
-                  'Keyboard State',
-                  style: TextStyle(color: Colors.blueAccent),
-                )),
-            const Gap(8.0),
+              onPressed: () {
+                showCustomSnackBar(
+                  context,
+                  context.isKeyBoardOpen ? 'Keyboard Open' : 'Keyboard Closed',
+                );
+              },
+              child: const Text(
+                'Keyboard State',
+                style: TextStyle(color: Colors.blueAccent),
+              ),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                SizeMeasuringWidget(
+                  onSizeChanged: (size) {
+                    showCustomSnackBar(context, 'Size: $size');
+                  },
+                  child: const Text('Size Measuring Widget'),
+                );
+              },
+              child: const Text(
+                'Size Measuring Widget',
+                style: TextStyle(color: Colors.greenAccent),
+              ),
+            ),
+            const Gap(4.0),
             const TextField().withPaddingAll(6.0).withBorder(Colors.amber),
-            const Gap(8.0),
+            SizeMeasuringWidget(
+              onSizeChanged: (size) {
+                showCustomSnackBar(context, 'Size: $size');
+              },
+              child: const Text('Size Measuring Widget'),
+            ),
+            const Gap(4.0),
             ElevatedButton(
                 onPressed: () => context.hideKeyboard(),
                 child: const Text('HideKeyboard')),
-            const Gap(8.0),
+            const Gap(4.0),
             const Text('Welcome to the UI Extensions Flutter Demo!',
                     style: TextStyle(color: Colors.purple))
                 .withPaddingAll(3)
